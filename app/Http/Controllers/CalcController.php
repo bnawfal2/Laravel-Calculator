@@ -32,9 +32,9 @@ class CalcController extends Controller
         $val1 = $request->input('val1');
         $val2 = $request->input('val2');
         $operator = basename($request->input('operator'));
-        $calc = CalcFactory::build($operator);
-        $sum = $calc->calculate($val1,$val2);
-        $sign = $calc->getSign();
+        $calculateur = CalcFactory::build($operator);
+        $sum = $calculateur->calculate($val1,$val2);
+        $sign = $calculateur->getSign();
         
         return redirect()->route('calculator.home')->with( 
             [ 
