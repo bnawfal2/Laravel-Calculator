@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Models;
 
 /**
  * Simple Factory class to build calculator operator objects
@@ -16,7 +16,7 @@ class CalcFactory
     public static function build ($type = '') 
     {
         if ($type != '') {
-            $className = 'App\\Http\\Controllers\\Calc'.ucfirst($type);
+            $className = 'App\\Models\\Calc'.ucfirst($type);
             if (class_exists($className)) {
                 return new $className();
             } 

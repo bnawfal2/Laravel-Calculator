@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Interfaces;
 
 /**
  * Interface for calculator operators

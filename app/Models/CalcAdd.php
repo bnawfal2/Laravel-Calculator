@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Models;
+use App\Interfaces\CalcI;
 
 /**
- * Subtraction class
+ * Addition class
  */
-class CalcSubtract implements CalcI
+class CalcAdd implements CalcI
 {
     /**
      * Var to hold the sign
      *
      * @var string
      */
-    private $sign = '-'; 
+    private $sign = '+'; 
 
     /**
      * Function to calculate
@@ -23,7 +24,7 @@ class CalcSubtract implements CalcI
      */
     public function calculate($value1, $value2)
     {
-        return $value1 - $value2;
+        return $value1 + $value2;
     }
 
     /**

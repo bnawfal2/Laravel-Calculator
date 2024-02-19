@@ -28,7 +28,7 @@ class OperationRequest extends FormRequest
                 'required',
                 'max:255',
                 function ($attribute, $value, $fail) {
-                    $class_name = 'App\\Http\\Controllers\\Calc'.ucfirst($value);
+                    $class_name = 'App\\Models\\Calc'.ucfirst($value);
                     if (!class_exists($class_name)) {
                         $fail('That operatar is invalid.');
                     }

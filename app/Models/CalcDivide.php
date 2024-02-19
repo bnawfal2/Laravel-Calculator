@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Models;
+use App\Interfaces\CalcI;
 /**
  * Division class
  */
